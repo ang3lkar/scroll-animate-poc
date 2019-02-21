@@ -1,0 +1,30 @@
+#foo {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.move-down{
+  transform: translate(350px,0);
+  transition: all 2s ease-in-out;
+  -webkit-transform: translateY(850px); /** Chrome & Safari **/
+  -o-transform: translateY(850px); /** Opera **/
+  -moz-transform: translateY(850px); /** Firefox **/
+  border-radius: 50%;
+}
+
+.move-downer{
+  transform: translate(350px,0);
+  transition: all 2s ease-in-out;
+  -webkit-transform: translateY(1650px); /** Chrome & Safari **/
+  -o-transform: translateY(1650px); /** Opera **/
+  -moz-transform: translateY(1650px); /** Firefox **/
+  border-radius: 0%;
+}
